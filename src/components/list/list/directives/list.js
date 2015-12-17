@@ -17,7 +17,7 @@ export default class ListDirective {
 		};
 
 		this.$compile = $compile;
-		
+
 		this.tpls = {
 			default: defaultTpl,
 			checkbox: checkboxTpl
@@ -29,11 +29,11 @@ export default class ListDirective {
 		let tpl = this.tpls[type];
 		element.html(tpl);
 		this.$compile(element.contents())(scope);
-		
+
         scope.visibleProvider = [];
         scope.canvasHeight = {};
 		scope.style = {};
-		
+
 		var rowHeight = 42;
         var height = 200;
         var scrollTop = 0;
@@ -44,10 +44,10 @@ export default class ListDirective {
 			element[0].addEventListener("scroll", (evt) => {
 				scrollTop = element.prop("scrollTop");
 				scope.updateDisplayList();
-	
+
 				scope.$apply();
 			});
-			
+
 			cellsPerPage = Math.round(height / rowHeight);
 			numberOfCells = 3 * cellsPerPage;
 			scope.canvasHeight = {
