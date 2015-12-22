@@ -1,6 +1,8 @@
 import checkboxCellTpl from "../../../modules/demo/partials/datagrid/checkbox-cell.html";
+
 import sortHeaderCellTpl from "../../../modules/demo/partials/datagrid/sort-header-cell.html";
 import checkboxHeaderCellTpl from "../../../modules/demo/partials/datagrid/checkbox-header-cell.html";
+
 import buttonCellTpl from "../../../modules/demo/partials/datagrid/button-cell.html";
 
 export default class DataGridController {

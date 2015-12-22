@@ -48,7 +48,7 @@ export default class DataGridDirective {
 		this.$compile(angular.element(element.find("thead")[0]))(scope);
 		this.$compile(angular.element(element.find("tbody")[0]))(scope);
 		
-		scope.$watchCollection("datagridCtrl.data", () => scope.datagridCtrl.$allChecked = scope.datagridCtrl.data.every(it => it.$checked));
+		//scope.$watchCollection("datagridCtrl.data", () => scope.datagridCtrl.$allChecked = scope.datagridCtrl.data.every(it => it.$checked));
 	}
 }
 
